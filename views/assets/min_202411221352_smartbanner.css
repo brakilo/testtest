@@ -1,0 +1,255 @@
+.smartbanner {
+    position: fixed;
+    top: auto;
+    left: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 84px;
+    background: #fff;
+    font-family: Roboto, Arial, sans-serif;
+    z-index: 31001
+}
+
+.smartbanner__whitness {
+    position: relative;
+    height: 84px
+}
+
+.smartbanner__exit {
+    position: absolute;
+    top: calc(5%);
+    right: 4px;
+    display: block;
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    border: 0;
+    text-align: center
+}
+
+.smartbanner__exit::before,
+.smartbanner__exit::after {
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #333;
+    content: ' '
+}
+
+.smartbanner__exit::before {
+    transform: rotate(45deg)
+}
+
+.smartbanner__exit::after {
+    transform: rotate(-45deg)
+}
+
+.smartbanner__icon {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    width: 60px;
+    height: 64px;
+    background-size: 64px 64px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjMuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyIDMyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMiAzMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOm5vbmU7fQoJLnN0MXtmaWxsOiM5NjE1NEE7fQoJLnN0MntmaWxsOiNGRkZGRkY7fQoJLnN0M3tmaWxsOiNGNkFCQjY7fQo8L3N0eWxlPgo8Zz4KCTxyZWN0IHk9IjAiIGNsYXNzPSJzdDAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTI0LjUsNS40QzIxLjcsNSwxOC45LDQuNywxNiw0LjdDMTMuMSw0LjcsMTAuMyw1LDcuNSw1LjRDNi4xLDUuOCw1LjEsNyw1LDguNXYxNWMwLjEsMS41LDEuMSwyLjcsMi41LDMuMSAgIGMyLjgsMC40LDUuNywwLjcsOC41LDAuN2MyLjktMC4xLDUuNy0wLjMsOC41LTAuN2MxLjQtMC40LDIuNC0xLjYsMi41LTMuMXYtMTVDMjYuOSw3LDI1LjksNS44LDI0LjUsNS40eiIvPgoJPHBhdGggY2xhc3M9InN0MiIgZD0iTTExLjYsMTcuOXY1LjdsMy0xLjl2LTMuOGMwLTEuNiwxLjMtMi42LDMuMS0yLjN2LTIuOEMxMy45LDEyLjQsMTEuNiwxNC42LDExLjYsMTcuOXogTTE1LDExLjYgICBjMC45LDAsMS43LTAuOCwxLjctMS43YzAtMC45LTAuOC0xLjctMS43LTEuN2MtMC45LDAtMS43LDAuOC0xLjcsMS43YzAsMCwwLDAsMCwwQzEzLjMsMTAuOSwxNC4xLDExLjYsMTUsMTEuNiAgIEMxNSwxMS42LDE1LDExLjYsMTUsMTEuNnoiLz4KCTxwYXRoIGlkPSJmZDg0MjZjZS02ZTY5LTRkYWYtYTAxNS00ZjE5N2Y0NzE1MTciIGNsYXNzPSJzdDMiIGQ9Ik0xOC40LDE1LjRjMCwwLjIsMC4yLDAuNCwwLjQsMC40YzAuNCwwLjEsMC44LDAuMSwxLjIsMC4xICAgYzAuNCwwLDAuOCwwLDEuMi0wLjFjMC4yLTAuMSwwLjMtMC4yLDAuNC0wLjR2LTIuMmMwLTAuMi0wLjItMC40LTAuNC0wLjRjLTAuNC0wLjEtMC44LTAuMS0xLjItMC4xYy0wLjQsMC0wLjgsMC0xLjIsMC4xICAgYy0wLjIsMC4xLTAuNCwwLjItMC40LDAuNFYxNS40eiIvPgo8L2c+Cjwvc3ZnPg==)
+}
+
+.smartbanner__info {
+    position: absolute;
+    top: 8px;
+    left: 84px;
+    display: flex;
+    overflow-y: hidden;
+    width: 40%;
+    height: 64px;
+    align-items: center
+}
+
+.smartbanner__info__title {
+    font-size: 14px !important
+}
+
+.smartbanner__info__author,
+.smartbanner__info__price {
+    font-size: 14px
+}
+
+.smartbanner__info__price {
+    color: #FFCB05
+}
+
+.smartbanner__button {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    z-index: 1;
+    display: block;
+    padding: 0 10px;
+    min-width: 10%;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none
+}
+
+.smartbanner__button__label {
+    text-align: center
+}
+
+.smartbanner.smartbanner--android {
+    background: #F6ABB6
+}
+
+.smartbanner.smartbanner--android .smartbanner__exit {
+    right: 6px;
+    width: 17px;
+    height: 17px;
+    color: #333;
+    font-family: 'ArialRoundedMTBold', Arial;
+    font-size: 20px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 17px
+}
+
+.smartbanner.smartbanner--android .smartbanner__exit::before,
+.smartbanner.smartbanner--android .smartbanner__exit::after {
+    top: 3px;
+    left: 8px;
+    width: 2px;
+    height: 11px;
+    background: #333
+}
+
+.smartbanner.smartbanner--android .smartbanner__exit:active,
+.smartbanner.smartbanner--android .smartbanner__exit:hover {
+    color: #eee
+}
+
+.smartbanner.smartbanner--android .smartbanner__icon {
+    background-color: #fff0;
+    box-shadow: none
+}
+
+.smartbanner.smartbanner--android .smartbanner__info {
+    color: #212121
+}
+
+.smartbanner.smartbanner--android .smartbanner__info__title {
+    color: #96154A;
+    width: 90%
+}
+
+.smartbanner.smartbanner--android .smartbanner__button {
+    transition: background .2s;
+    top: 22px;
+    right: 20px;
+    padding: 0;
+    border-radius: 4px;
+    background: #96154A;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.smartbanner.smartbanner--android .smartbanner__button:active,
+.smartbanner.smartbanner--android .smartbanner__button:hover {
+    background: #8bc34a;
+    text-decoration: none
+}
+
+.smartbanner.smartbanner--android .smartbanner__button__label {
+    display: block;
+    padding: 0 10px;
+    border-radius: 5px;
+    height: 36px;
+    box-shadow: none;
+    line-height: 36px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: none
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner {
+    background: #F6ABB6 !important
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__info {
+    color: #212121
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__info__title {
+    color: #96154A;
+    width: 90%
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__icon {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    width: 60px;
+    height: 64px;
+    background-size: 64px 64px
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__exit {
+    right: 6px;
+    width: 17px;
+    height: 17px;
+    color: #333;
+    font-family: 'ArialRoundedMTBold', Arial;
+    font-size: 20px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 17px
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__exit::before,
+.smartbanner.smartbanner--ios .smartbanner__exit::after {
+    top: 3px;
+    left: 8px;
+    width: 2px;
+    height: 11px;
+    background: #333
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__exit:active,
+.smartbanner.smartbanner--ios .smartbanner__exit:hover {
+    color: #eee
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__info {
+    color: #212121
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__info__title {
+    color: #96154A;
+    width: 90%
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__button {
+    transition: background .2s;
+    top: 22px;
+    right: 20px;
+    padding: 0;
+    border-radius: 4px;
+    background: #96154A;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__button:active,
+.smartbanner.smartbanner--ios .smartbanner__button:hover {
+    background: #8bc34a;
+    text-decoration: none
+}
+
+.smartbanner.smartbanner--ios.js_smartbanner .smartbanner__button__label {
+    display: block;
+    padding: 0 10px;
+    border-radius: 5px;
+    height: 36px;
+    box-shadow: none;
+    line-height: 36px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: none
+}
